@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:ticketing_app/screens/home_screen.dart';
 import 'package:ticketing_app/screens/profile_screen.dart';
+import 'package:ticketing_app/screens/search_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -16,7 +17,7 @@ class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    const Text("Search"),
+    SearchScreen(),
     const Text("Ticket"),
     ProfileScreen(),
   ];
